@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "types": [],
+    "target": "es2017"
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}

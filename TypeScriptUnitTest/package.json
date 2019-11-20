@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "name": "nyc.regression.repo",
+  "private": true,
+  "dependencies": {
+    "ts-node": "8.4.1",
+    "typescript": "3.5.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "5.2.7",
+    "@types/node": "10.14.22",
+    "@types/chai": "4.2.4",
+    "chai": "4.2.0",
+    "mocha": "6.2.2",
+    "nyc": "14.1.1",
+    "source-map-support": "0.5.13"
+  },
+  "nyc": {
+    "all": true,
+    "exclude": [
+      "**/index.ts",
+      "**/*.d.ts",
+      "**/*.js"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "reporter": [
+      "html"
+    ],
+    "report-dir": "../TypeScriptUnitTest/coverage",
+    "temp-dir": "../TypeScriptUnitTest/.nyc_output"
+  },
+  "scripts": {
+    "test": "nyc --cwd ../Application mocha -r ts-node/register -r source-map-support/register **/*.spec.ts"
+  }
+}

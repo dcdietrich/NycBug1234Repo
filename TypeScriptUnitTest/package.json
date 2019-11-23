@@ -3,6 +3,7 @@
   "name": "nyc.regression.repo",
   "private": true,
   "dependencies": {
+    "@istanbuljs/load-nyc-config": "git://github.com/coreyfarrell/load-nyc-config.git#resolve-cwd",
     "ts-node": "8.4.1",
     "typescript": "3.5.3"
   },
